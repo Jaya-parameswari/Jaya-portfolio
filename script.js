@@ -177,73 +177,8 @@ chatInput.addEventListener(
 
     }
 );
-const analyzeButton = document.getElementById("analyze-button");
-
-const taskInput = document.getElementById("task-input");
-
-const demoResult = document.getElementById("demo-result");
 
 
-analyzeButton.addEventListener("click", function () {
-
-    const tasks = taskInput.value.trim();
-
-
-    if (tasks === "") {
-
-        demoResult.innerHTML = `
-            <p>Please enter some tasks first.</p>
-        `;
-
-        return;
-    }
-
-
-    demoResult.innerHTML = `
-        <h4>Task analysis ready</h4>
-
-        <p>
-            Your tasks have been received.
-            In the final version, the AI model will analyze
-            deadlines, workload and priority to generate
-            a personalized plan.
-        </p>
-    `;
-
-});
-const extractButton = document.getElementById("extract-button");
-
-const jobInput = document.getElementById("job-input");
-
-const jobResult = document.getElementById("job-result");
-
-
-extractButton.addEventListener("click", function () {
-
-    const jobDescription = jobInput.value.trim();
-
-
-    if (jobDescription === "") {
-
-        jobResult.innerHTML = `
-            <p>Please enter a job description first.</p>
-        `;
-
-        return;
-    }
-
-
-    jobResult.innerHTML = `
-        <h4>Job information detected</h4>
-
-        <p>
-            The AI system would now extract details such as
-            job title, required skills, experience level and
-            other relevant information from the provided input.
-        </p>
-    `;
-
-});
 const sendMessageButton =
     document.getElementById("send-message");
 
